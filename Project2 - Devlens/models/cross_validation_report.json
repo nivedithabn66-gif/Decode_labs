@@ -1,0 +1,46 @@
+{
+  "n_splits": 5,
+  "best_model": "Linear SVM",
+  "benchmark": [
+    {
+      "model_name": "Linear SVM",
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0,
+      "cv_accuracy_mean": 1.0,
+      "test_macro_f1": 1.0,
+      "test_accuracy": 1.0,
+      "train_time_sec": 0.16775712966918946,
+      "pred_latency_ms": 0.08329153060913086
+    },
+    {
+      "model_name": "Logistic Regression",
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0,
+      "cv_accuracy_mean": 1.0,
+      "test_macro_f1": 1.0,
+      "test_accuracy": 1.0,
+      "train_time_sec": 0.10108771324157714,
+      "pred_latency_ms": 0.057712395985921226
+    },
+    {
+      "model_name": "Multinomial Naive Bayes",
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0,
+      "cv_accuracy_mean": 1.0,
+      "test_macro_f1": 1.0,
+      "test_accuracy": 1.0,
+      "train_time_sec": 0.08674893379211426,
+      "pred_latency_ms": 0.06110588709513347
+    },
+    {
+      "model_name": "Random Forest",
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0,
+      "cv_accuracy_mean": 1.0,
+      "test_macro_f1": 1.0,
+      "test_accuracy": 1.0,
+      "train_time_sec": 0.32905216217041017,
+      "pred_latency_ms": 0.10850191116333008
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "model_name": "Linear SVM",
+  "version": "v1.0.0",
+  "training_timestamp": "2026-08-26T21:18:45.343311",
+  "primary_metric": "macro_f1",
+  "best_macro_f1": 1.0,
+  "best_accuracy": 1.0,
+  "dataset_source": "found_raw",
+  "train_samples": 1200,
+  "test_samples": 300,
+  "num_features": 1014,
+  "label_classes": [
+    "Bug",
+    "Feature",
+    "Question"
+  ],
+  "vectorizer_config": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 10000,
+    "min_df": 2,
+    "max_df": 0.95
+  },
+  "preprocessing_config": {
+    "lowercase": true,
+    "remove_whitespace": true,
+    "remove_punctuation": false,
+    "remove_stopwords": true,
+    "num_stopwords": 174
+  },
+  "candidate_comparisons": [
+    {
+      "model_name": "Linear SVM",
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "train_time_sec": 0.1078,
+      "pred_latency_ms": 0.009
+    },
+    {
+      "model_name": "Logistic Regression",
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "train_time_sec": 0.0137,
+      "pred_latency_ms": 0.001
+    },
+    {
+      "model_name": "Multinomial Naive Bayes",
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "train_time_sec": 0.0035,
+      "pred_latency_ms": 0.001
+    },
+    {
+      "model_name": "Random Forest",
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "train_time_sec": 0.2384,
+      "pred_latency_ms": 0.04
+    }
+  ]
+}

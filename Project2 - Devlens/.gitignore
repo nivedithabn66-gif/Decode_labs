@@ -1,0 +1,62 @@
+# Environment variables
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# Datasets (Do not commit large raw datasets to git)
+data/raw/*.csv
+data/raw/*.json
+data/raw/train/*.csv
+data/raw/train/*.json
+data/raw/test/*.csv
+data/raw/test/*.json
+!data/raw/README.md
+!data/README.md
+
+# Trained Model Binaries
+models/*.pkl
+models/*.joblib
+!models/README.md
+
+# Node / React
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.nx/
+.npm
+*.log
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+archive/embold_train.json
+archive/embold_train_extra.json
+
+*.zip
+*.csv
+*.db

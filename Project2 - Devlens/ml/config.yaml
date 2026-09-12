@@ -1,0 +1,34 @@
+dataset:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  train_filename: "train"
+  test_filename: "test"
+  random_seed: 42
+  test_size: 0.2
+
+preprocessing:
+  lowercase: true
+  remove_whitespace: true
+  remove_punctuation: false
+  remove_stopwords: true
+  min_text_len: 5
+
+vectorizer:
+  ngram_range: [1, 2]
+  max_features: 10000
+  min_df: 2
+  max_df: 0.95
+
+model:
+  output_dir: "models"
+  version: "1.0.0"
+  confidence_threshold: 0.65
+  primary_metric: "macro_f1"
+
+label_mapping:
+  0: "Bug"
+  1: "Feature"
+  2: "Question"
+  "bug": "Bug"
+  "feature": "Feature"
+  "question": "Question"

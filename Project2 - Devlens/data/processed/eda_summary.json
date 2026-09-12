@@ -1,0 +1,66 @@
+{
+  "dataset_source": "found_raw",
+  "raw_train_file": "data/raw\\train.csv",
+  "raw_test_file": "data/raw\\test.csv",
+  "num_train_examples": 1200,
+  "num_test_examples": 300,
+  "total_examples": 1500,
+  "columns": [
+    "title",
+    "body",
+    "text",
+    "label_raw",
+    "label",
+    "char_len",
+    "word_count",
+    "char_length"
+  ],
+  "data_types": {
+    "title": "str",
+    "body": "str",
+    "text": "str",
+    "label_raw": "int64",
+    "label": "str",
+    "char_len": "int64",
+    "word_count": "int64",
+    "char_length": "int64"
+  },
+  "missing_values": {
+    "title_missing": 0,
+    "body_missing": 0,
+    "text_missing": 0,
+    "label_missing": 0
+  },
+  "duplicate_records": 0,
+  "class_distribution": {
+    "Bug": 400,
+    "Feature": 400,
+    "Question": 400
+  },
+  "class_percentages": {
+    "Bug": 33.33,
+    "Feature": 33.33,
+    "Question": 33.33
+  },
+  "class_imbalance_ratio": 1.0,
+  "text_length_distribution": {
+    "avg_word_count_by_class": {
+      "Bug": 33.5,
+      "Feature": 32.1,
+      "Question": 33.5
+    },
+    "avg_char_count_by_class": {
+      "Bug": 228.25,
+      "Feature": 216.75,
+      "Question": 221.8
+    },
+    "overall_avg_words": 33.03,
+    "overall_avg_chars": 222.27,
+    "quantiles": {
+      "word_count_p25": 32.0,
+      "word_count_median": 33.0,
+      "word_count_p75": 34.25,
+      "char_len_median": 222.0
+    }
+  }
+}

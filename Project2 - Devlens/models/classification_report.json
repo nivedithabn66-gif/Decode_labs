@@ -1,0 +1,20 @@
+{
+  "Bug": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 100
+  },
+  "Feature": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 100
+  },
+  "Question": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 100
+  }
+}

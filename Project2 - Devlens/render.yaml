@@ -1,0 +1,26 @@
+services:
+  # DevLens Backend API Service
+  - type: web
+    name: devlens-backend
+    env: python
+    region: oregon
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python -m backend.app.main"
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: DATABASE_URL
+        value: sqlite:///./devlens.db
+
+  # DevLens Frontend Web Application
+  - type: web
+    name: devlens-frontend
+    env: docker
+    region: oregon
+    dockerfilePath: Dockerfile.frontend
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          type: web
+          name: devlens-backend
+          property: host
